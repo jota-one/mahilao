@@ -11,8 +11,6 @@ const { data } = await useAsyncData('pl', () =>
       without: ['_'],
     }).findOne(),
 )
-
-console.log(data)
 </script>
 
 <template>
@@ -45,8 +43,9 @@ console.log(data)
             <a
                 :href="file.filename"
                 target="_blank"
-                class="block px-4 py-2 text-sm font-medium text-gray-500"
+                class="block px-4 py-2 text-sm font-medium text-gray-500 flex items-center"
             >
+              <span class="i-material-symbols-download text-xl mr-1"></span>
               {{ file.label.fr }}
             </a>
           </li>

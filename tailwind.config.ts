@@ -1,7 +1,14 @@
 import type { Config } from 'tailwindcss'
 import defaultTheme from 'tailwindcss/defaultTheme'
+import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
 
 export default <Partial<Config>>{
+  plugins: [
+    iconsPlugin({
+      // Select the icon collections you want to use
+      collections: getIconCollections(['material-symbols']),
+    }),
+  ],
   theme: {
     extend: {
       fontFamily: {

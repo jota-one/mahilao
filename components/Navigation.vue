@@ -23,12 +23,12 @@
       </ul>
     </div>
 
-    <div class="sticky inset-x-2 bottom-28 flex justify-center">
+    <div class="sticky inset-x-2 bottom-28 flex justify-end mr-8 mb-8">
         <a
-            href="#"
-            class=" mx-4 inline-block rounded-full bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+            href="/fr/contact"
+            class="inline-block rounded-md bg-stone-500 px-6 py-1 text-center font-display text-xl text-white transition hover:bg-stone-700 focus:outline-none focus:ring focus:ring-stone-50"
         >
-          Faites un don
+          Faire un don
         </a>
     </div>
 

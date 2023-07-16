@@ -1,12 +1,12 @@
 <template>
   <div class="flex h-screen flex-col border-e">
     <div class="px-4 py-6 w-full flex-1">
-    <NuxtLink
-        class="grid h-10 w-32 place-content-center"
-        href="/"
-    >
-      <img src="/images/logo.png" alt="Logo Mahilao" />
-    </NuxtLink>
+      <NuxtLink
+          class="grid h-10 w-32 place-content-center"
+          href="/"
+      >
+        <img src="/images/logo.png" alt="Logo Mahilao" />
+      </NuxtLink>
 
       <ul class="mt-6 space-y-1 text-right list-none">
         <template v-for="(item, index) in i18nNavigation">
@@ -33,11 +33,13 @@
     </div>
 
     <div class="sticky inset-x-0 bottom-0 p-8">
-        <div>
+        <div class="w-full text-right">
           <p class="text-xs">
             <strong class="block font-medium">copyright @ Mahilao</strong>
-
-            <span> blabla </span>
+            <span> design by Geetha Laune </span>
+            <a href="https://jota.one" target="_blank" class="flex justify-end -mr-2">
+              <img src="/images/jota.svg" />
+            </a>
           </p>
         </div>
     </div>

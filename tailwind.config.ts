@@ -27,6 +27,9 @@ export default <Partial<Config>>{
       pattern: /(bg|text)-(women|farming)/,
     },
     {
+      pattern: /(bg)-(amber-300|orange-400|red-400)/,
+    },
+    {
       pattern: /grid-cols-\d/
     }
   ]

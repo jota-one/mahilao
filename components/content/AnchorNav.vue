@@ -50,19 +50,19 @@ onMounted(async () => {
             v-for="item in nav"
             :key="item.anchor"
             :href="`#${item.anchor}`"
-            class="flex items-start"
+            class="flex items-start font-display"
         >
           {{ item.title }}
         </a>
       </nav>
     </div>
     <div class="flex items-end justify-end col-span-1 ml-6 mr-10">
-      <div class="rounded-b-full overflow-hidden h-[430px]">
+      <div class="rounded-b-full overflow-hidden h-[350px]">
         <img src="/images/hero-women-1.jpg" alt="" />
       </div>
     </div>
     <div class="flex items-end justify-end col-span-1 mr-16">
-      <div class="rounded-b-full overflow-hidden h-[430px]">
+      <div class="rounded-b-full overflow-hidden h-[350px]">
         <img src="/images/hero-women-2.jpg" alt="" />
       </div>
     </div>

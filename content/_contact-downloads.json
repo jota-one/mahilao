@@ -1,0 +1,56 @@
+[
+  {
+    "label": {
+      "fr": "Adhérer à Mahilao"
+    },
+    "color": "bg-amber-300",
+    "files": [
+      {
+        "filename": "/formulaires/formidable.pdf",
+        "label": {
+          "fr": "Formulaire A38B"
+        }
+      },
+      {
+        "filename": "/formulaires/formidable.pdf",
+        "label": {
+          "fr": "Formulaire 7A"
+        }
+      }
+    ]
+  },
+  {
+    "label": {
+      "fr": "Devenir Sponsor"
+    },
+    "color": "bg-orange-400",
+    "files": [
+      {
+        "filename": "/formulaires/formidable.pdf",
+        "label": {
+          "fr": "Autre truc"
+        }
+      }
+    ]
+  },
+  {
+    "label": {
+      "fr": "Parrainer une femme"
+    },
+    "color": "bg-red-400",
+    "files": [
+      {
+        "filename": "/formulaires/formidable.pdf",
+        "label": {
+          "fr": "Formulaire truc"
+        }
+      },
+      {
+        "filename": "/formulaires/formidable.pdf",
+        "label": {
+          "fr": "Formulaire 18"
+        }
+      }
+    ]
+  }
+]

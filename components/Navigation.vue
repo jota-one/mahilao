@@ -56,21 +56,25 @@ defineProps<Props>()
 defineEmits(['close'])
 
 const { navigation, page } = useContent()
+const i18nNavigation = ref([])
 
-const i18nNavigation = computed(() =>
-  navigation.value
-    .find((item: any) => item._path === '/fr')
-    .children.map((subItem: any) => {
-      subItem.active = page.value?._path.includes(subItem._path)
-    if (subItem.children) {
-      subItem.children = subItem.children.map((subSubItem: any) => {
-        subSubItem.active = page.value?._path.includes(subSubItem._path)
-        return subSubItem
+watch(navigation, nav => {
+  if (!nav) {
+    return
+  }
+  i18nNavigation.value = nav
+      .find((item: any) => item._path === '/fr')
+      .children.map((subItem: any) => {
+        subItem.active = page.value?._path.includes(subItem._path)
+        if (subItem.children) {
+          subItem.children = subItem.children.map((subSubItem: any) => {
+            subSubItem.active = page.value?._path.includes(subSubItem._path)
+            return subSubItem
+          })
+        }
+        return subItem
       })
-    }
-      return subItem
-    }),
-)
+}, { immediate: true })
 </script>
 
 <style lang="postcss" scoped>

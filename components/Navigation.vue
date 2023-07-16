@@ -1,11 +1,11 @@
 <template>
   <div class="flex h-screen flex-col border-e">
-    <div class="px-4 py-6 w-full flex-1">
+    <div class="px-4 py-6 w-full flex-1 text-right">
       <NuxtLink
-          class="grid h-10 w-32 place-content-center"
+          class="grid h-20 place-content-end"
           href="/"
       >
-        <img src="/images/logo.png" alt="Logo Mahilao" />
+        <img class="w-32" src="/images/logo.png" alt="Logo Mahilao" />
       </NuxtLink>
 
       <ul class="mt-6 space-y-1 text-right list-none">
@@ -23,16 +23,11 @@
       </ul>
     </div>
 
-    <div class="sticky inset-x-2 bottom-28 flex justify-end mr-8 mb-8">
-        <a
-            href="/fr/contact"
-            class="inline-block rounded-md bg-stone-500 px-6 py-1 text-center font-display text-xl text-white transition hover:bg-stone-700 focus:outline-none focus:ring focus:ring-stone-50"
-        >
-          Faire un don
-        </a>
+    <div class="flex justify-end mr-8 mb-8">
+      <Cta href="/fr/contact">Faire un don</Cta>
     </div>
 
-    <div class="sticky inset-x-0 bottom-0 p-8">
+    <div class="p-8">
         <div class="w-full text-right">
           <p class="text-xs">
             <strong class="block font-medium">copyright @ Mahilao</strong>

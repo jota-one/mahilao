@@ -1,21 +1,21 @@
 <script setup lang="ts">
 type Props = {
-  color: string
-  titleTag: string
+  color?: string
+  titleTag?: string
+  ctaHref?: string
 }
 const props = withDefaults(defineProps<Props>(), {
   color: 'black',
-  titleTag: 'h2'
+  titleTag: 'h2',
+  ctaHref: '#'
 })
 </script>
 
 <template>
-  <div>
-    <component :is="titleTag" class="text-2xl mb-10" :class="[`text-${color}`]"><slot name="title" /></component>
-    <slot name="content" />
+  <div class="flex flex-col justify-between">
+    <component :is="titleTag" class="text-2xl mb-10"><slot name="title" /></component>
+    <div class="flex-1"><slot name="content" /></div>
+    <Cta :href="ctaHref" :color="color"><slot name="cta" /></Cta>
   </div>
 </template>
 
-<style scoped lang="postcss">
-
-</style>

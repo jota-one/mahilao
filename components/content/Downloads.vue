@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { page } = useContent()
-console.log(page.value)
 const { data } = await useAsyncData('pl', () =>
     queryContent({
       where: [
@@ -14,7 +13,7 @@ const { data } = await useAsyncData('pl', () =>
 </script>
 
 <template>
-  <ul class="space-y-1 list-none">
+  <ul class="list-none p-0 mt-0">
     <li v-for="group in data.body">
       <details class="group [&_summary::-webkit-details-marker]:hidden" open>
         <summary

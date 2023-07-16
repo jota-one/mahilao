@@ -2,7 +2,7 @@
   <article
     class="grid grid-cols-12 grid-flow-col max-w-screen-2xl mx-auto bg-white"
   >
-    <header :class="['col-span-2', `bg-${page.color}-100`]">
+    <header class="h-screen sticky top-0 col-span-2" :class="[`bg-${page.color}-100`]">
       <button
         class="hamburger"
         @click="navigationOpened = true"

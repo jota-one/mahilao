@@ -44,7 +44,7 @@ onMounted(async () => {
 <template>
   <div>
   <div class="grid grid-cols-3">
-    <div class="flex flex-col justify-end px-10">
+    <div class="flex flex-col justify-center px-10">
       <nav v-if="nav.length" class="flex flex-col py-2">
         <a
             v-for="item in nav"
@@ -56,9 +56,14 @@ onMounted(async () => {
         </a>
       </nav>
     </div>
-    <div class="flex items-end justify-end col-span-2">
-      <div class="rounded-l-full overflow-hidden w-71/12">
-        <img src="/images/hero-women.jpg" alt="" />
+    <div class="flex items-end justify-end col-span-1 ml-6 mr-10">
+      <div class="rounded-b-full overflow-hidden h-[430px]">
+        <img src="/images/hero-women-1.jpg" alt="" />
+      </div>
+    </div>
+    <div class="flex items-end justify-end col-span-1 mr-16">
+      <div class="rounded-b-full overflow-hidden h-[430px]">
+        <img src="/images/hero-women-2.jpg" alt="" />
       </div>
     </div>
   </div>

@@ -8,13 +8,13 @@
       <img src="/images/logo.png" alt="Logo Mahilao" />
     </NuxtLink>
 
-      <ul class="mt-6 space-y-1 text-right">
+      <ul class="mt-6 space-y-1 text-right list-none">
         <template v-for="(item, index) in i18nNavigation">
           <ActionableMenuItem v-if="item.children" :item="item" :page="page" />
           <li v-else>
             <NuxtLink
                 :href="item._path"
-                class="uppercase block rounded-lg px-4 py-2 text-md font-medium text-gray-500 hover:text-gray-700"
+                class="uppercase block px-4 pt-2 text-lg font-medium text-gray-500 hover:text-gray-700"
             >
               {{ item.title }}
             </NuxtLink>

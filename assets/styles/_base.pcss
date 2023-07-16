@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Verveine';
+        src: url('../fonts/verveine/VerveineRegular.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    ul {
+        @apply pl-6 my-2;
+    }
+
+    li {
+        @apply list-disc;
+    }
+}

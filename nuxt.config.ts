@@ -5,7 +5,6 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
-      link: [{ rel: 'stylesheet', href: '/fonts/Verveine.css' }],
       script: [
         {
           'defer': true,
@@ -18,5 +17,6 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxtjs/tailwindcss'],
   content: {
     documentDriven: true
-  }
+  },
+  css: ['@/assets/styles/main.pcss'],
 })

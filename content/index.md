@@ -2,7 +2,7 @@
 
 ::row{:cols=3 class=my-24}
 
-    :::intro{color=women}
+    :::intro{color=women class="pl-10 pr-5"}
     #title
     Agir pour les filles et avec les femmes
     
@@ -14,7 +14,7 @@
     potentiel et a des opportunites de se réaliser à travers la formation. l'éducation et l'experience
     :::
 
-    :::intro{color=farming}
+    :::intro{color=farming class="px-5"}
     #title
     Soutenir l'autonomie alimentaire et l'équilibre nutritionnel
     

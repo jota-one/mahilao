@@ -1,10 +1,10 @@
 :hero
 
-::row{:cols=3 class=my-24}
+::row{:cols=3 class="my-24 ml-24"}
 
-    :::intro{color=women class="pl-24 pr-8"}
+    :::intro{color=women class="pr-8"}
     #title
-    AGIR AVEC LES FEMMES les plus défavorisées
+    Agir avec les femmes les plus défavorisées
 
 
     #content
@@ -36,7 +36,7 @@
     :::home-news{class=ml-8}
 ::
 
-::content-frame{id=defi}
+::content-frame{id=defi class="bg-neutral-50"}
 #title
 LES GRANDS DEFIS DES FEMMES INDIENNES
 
@@ -51,6 +51,7 @@ LES GRANDS DEFIS DES FEMMES INDIENNES
     - Accès à la propriété
     - Droit de travailler
 
+    <div class="mt-2"></div>
     Parce que dès qu’une femme pauvre a un revenu, elle le consacre à 100% à
     sa famille. Ce qui se traduit par des améliorations significatives notamment
     au niveau de l’alimentation, de la scolarisation de tous les enfants - y
@@ -67,6 +68,7 @@ LES GRANDS DEFIS DES FEMMES INDIENNES
     - Harcèlement sexuel
     - Inégalités des salaires
 
+    <div class="mt-2"></div>
     “Sécuriser” la place des femmes au sein du système familial en valorisant leurs compétences, en créant une nouvelle source de revenu et d’autonomie peut permettre une baisse des situations de violences au sein du couple.
     
     Parce qu’elles sont souvent isolées à la maison et que la responsabilité entière des tâches domestiques et des enfants leur est souvent attribuée.
@@ -82,6 +84,7 @@ LES GRANDS DEFIS DES FEMMES INDIENNES
     - Femmes prennent soin de la maison et des enfants
     - Hommes détiennent l’autorité centrale et fournissent le revenu de la famille
 
+    <div class="mt-2"></div>
     Pour pouvoir se réaliser, maintenir une estime de soi et tisser des liens sociaux favorables. 
 
     Pour sortir des rôles et des espaces limités qui leur sont attribués.
@@ -90,7 +93,7 @@ LES GRANDS DEFIS DES FEMMES INDIENNES
     :::
 ::
 
-::content-frame{class="mt-10" id=act-with-children}
+::content-frame{class="mt-10 bg-neutral-50" id=act-with-children}
 #title
 Défis pour les filles,<br>femmes en devenir
 
@@ -129,13 +132,13 @@ Défis pour les filles,<br>femmes en devenir
     <h3 class="text-5xl font-display">Contexte au Rajasthan</h3>
 </div>
 
-    :::content-frame{class="col-start-6 col-span-7 mt-10 rounded-l-full" id=map :rtl=true}
-    ![blu](/images/rajasthan.png)
+    :::content-frame{class="col-start-6 col-span-7 mt-10 rounded-l-full py-6 pl-6 pr-6 bg-white" id=map :rtl=true}
+    ![Rajasthan](/images/rajasthan.png)
     :::
 ::
 
 ::row{:cols=12}
-    :::content-frame{class="col-span-7 -mt-20 rounder-r-full mr-24 !p-6" background=women id=chiffres color=women}
+    :::content-frame{class="bg-women-200 col-span-7 -mt-20 rounder-r-full mr-24 !p-6" background=women id=chiffres color=women}
         ::::row{:cols=2}
             :::::stat{figure=27% legend="Ecart du taux d’alphabétisation entre les hommes et les femmes"}
             :::::
@@ -147,7 +150,7 @@ Défis pour les filles,<br>femmes en devenir
 ::
 
 ::row{:cols=12 class=mb-32}
-    :::content-frame{class="col-start-6 col-span-7 rounded-l-full ml-24 !p-6 -mt-20" id=chiffres2 background=farming color=farming :rtl=true}
+    :::content-frame{class="bg-farming-200 col-start-6 col-span-7 rounded-l-full ml-24 !p-6 -mt-20" id=chiffres2 background=farming color=farming :rtl=true}
         ::::row{:cols=2}
             :::::stat{figure=61% legend="de l’état du Rajasthan est couvert par le Désert du Thar"}
             :::::

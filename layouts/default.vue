@@ -2,7 +2,7 @@
   <article
     class="grid grid-cols-12 grid-flow-col max-w-screen-2xl mx-auto bg-white"
   >
-    <header class="h-screen sticky top-0 col-span-2" :class="[`bg-${page.color}-100`]">
+    <header class="h-screen sticky top-0 col-span-2" :class="{ 'bg-neutral-200': !isHomepage }">
       <button
         class="hamburger"
         @click="navigationOpened = true"
@@ -13,7 +13,7 @@
         @close="navigationOpened = false"
       />
     </header>
-    <main class="col-span-10" :class="{ 'bg-gray-200': isHomepage }">
+    <main class="col-span-10" :class="{ 'bg-neutral-200': isHomepage }">
       <div :class="['body', { transparent: !page?.bodyBg }]">
         <slot />
       </div>

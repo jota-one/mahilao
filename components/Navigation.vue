@@ -14,7 +14,7 @@
           <li v-else>
             <NuxtLink
                 :href="item._path"
-                class="uppercase block px-4 pt-2 text-lg font-medium text-gray-500 hover:text-gray-700"
+                class="uppercase block px-4 pt-2 text-lg font-medium text-black hover:text-gray-700"
             >
               {{ item.title }}
             </NuxtLink>

@@ -2,7 +2,7 @@
 
 ::row{:cols=3 class=my-24}
 
-    :::intro{color=women class="pl-16 pr-8"}
+    :::intro{color=women class="pl-24 pr-8"}
     #title
     AGIR AVEC LES FEMMES les plus défavorisées
 
@@ -125,8 +125,8 @@ Défis pour les filles,<br>femmes en devenir
 ::
 
 ::row{:cols=12 class=mt-24}
-<div class="col-span-4 col-start-2 md:mt-40 flex justify-center items-center">
-    <h3 class="text-5xl font-display">Context au Rajasthan</h3>
+<div class="col-span-4 col-start-2 md:mt-40 flex items-center">
+    <h3 class="text-5xl font-display">Contexte au Rajasthan</h3>
 </div>
 
     :::content-frame{class="col-start-6 col-span-7 mt-10 rounded-l-full" id=map :rtl=true}
@@ -135,7 +135,7 @@ Défis pour les filles,<br>femmes en devenir
 ::
 
 ::row{:cols=12}
-    :::content-frame{class="col-span-7 -mt-20 rounder-r-full mr-24 p-6" background=women id=chiffres color=women}
+    :::content-frame{class="col-span-7 -mt-20 rounder-r-full mr-24 !p-6" background=women id=chiffres color=women}
         ::::row{:cols=2}
             :::::stat{figure=27% legend="Ecart du taux d’alphabétisation entre les hommes et les femmes"}
             :::::
@@ -147,7 +147,7 @@ Défis pour les filles,<br>femmes en devenir
 ::
 
 ::row{:cols=12 class=mb-32}
-    :::content-frame{class="col-start-6 col-span-7 rounded-l-full ml-24 p-6 -mt-20" id=chiffres2 background=farming color=farming :rtl=true}
+    :::content-frame{class="col-start-6 col-span-7 rounded-l-full ml-24 !p-6 -mt-20" id=chiffres2 background=farming color=farming :rtl=true}
         ::::row{:cols=2}
             :::::stat{figure=61% legend="de l’état du Rajasthan est couvert par le Désert du Thar"}
             :::::

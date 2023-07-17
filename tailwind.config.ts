@@ -43,9 +43,8 @@ export default <Partial<Config>>{
     }
   },
   safelist: [
-    'safelisted',
     {
-      pattern: /(bg|text|ring)-(women|farming|stone|white)(-\d)?/,
+      pattern: /(bg|text|ring)-(women|farming|stone|white)(-\d+)?/,
     },
     {
       pattern: /(bg)-(amber-300|orange-400|red-400)/,

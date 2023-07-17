@@ -17,7 +17,7 @@ const { data } = await useAsyncData('pl', () =>
     <li v-for="group in data.body">
       <details class="group [&_summary::-webkit-details-marker]:hidden" open>
         <summary
-            class="flex cursor-pointer items-center px-4 py-6"
+            class="flex cursor-pointer items-center px-4 py-6 rounded-r-full"
             :class="[group.color]"
         >
           <span class="shrink-0 transition duration-300 -rotate-90 group-open:rotate-0">

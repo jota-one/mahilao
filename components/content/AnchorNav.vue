@@ -1,6 +1,8 @@
 <script setup lang="ts">
 type Props = {
   anchorTag: string
+  leftImageSrc?: string
+  rightImageSrc?: string
 }
 
 interface NavItem {
@@ -8,7 +10,10 @@ interface NavItem {
   title: string
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  leftImageSrc: '',
+  rightImageSrc: ''
+})
 
 const container = ref(null)
 const nav = ref<NavItem[]>([])
@@ -43,36 +48,24 @@ onMounted(async () => {
 
 <template>
   <div>
-  <div class="grid grid-cols-3">
-    <div class="flex flex-col justify-center px-10">
-      <nav v-if="nav.length" class="flex flex-col py-2">
-        <a
-            v-for="item in nav"
-            :key="item.anchor"
-            :href="`#${item.anchor}`"
-            class="flex items-start font-display"
-        >
-          {{ item.title }}
-        </a>
-      </nav>
-    </div>
-    <div class="flex items-end justify-end col-span-1 ml-6 mr-10">
-      <div class="rounded-b-full overflow-hidden h-[350px]">
-        <img src="/images/hero-women-1.jpg" alt="" />
+    <div class="grid grid-cols-3">
+      <div class="flex flex-col justify-center px-10">
+        <nav v-if="nav.length" class="flex flex-col py-2">
+          <a
+              v-for="item in nav"
+              :key="item.anchor"
+              :href="`#${item.anchor}`"
+              class="flex items-start font-display"
+          >
+            {{ item.title }}
+          </a>
+        </nav>
       </div>
+      <TopImage v-if="leftImageSrc" :src="leftImageSrc" class="col-span-1 ml-6 mr-10" />
+      <TopImage v-if="rightImageSrc" :src="rightImageSrc" class="col-span-1 mr-16" />
     </div>
-    <div class="flex items-end justify-end col-span-1 mr-16">
-      <div class="rounded-b-full overflow-hidden h-[350px]">
-        <img src="/images/hero-women-2.jpg" alt="" />
-      </div>
+    <div ref="container" class="content">
+      <slot />
     </div>
-  </div>
-  <div ref="container" class="content">
-    <slot />
-  </div>
   </div>
 </template>
-
-<style scoped lang="postcss">
-
-</style>

@@ -14,37 +14,32 @@ export default <Partial<Config>>{
       fontFamily: {
         'sans': ['Tahoma'],
         'display': ['Verveine'],
+        'subtitle': ['Georgia']
       },
       colors: {
         primary: defaultTheme?.colors?.green,
         women: {
-          50: '#faece6',
-          100: '#f6e0d7',
-          200: '#f6d1c1',
-          300: '#f3bba4',
-          400: '#f5aa8c',
-          500: '#ea6e51',
-          DEFAULT: '#ea6e51',
-          600: '#e86648',
-          700: '#ea502c'
+          200: '#E49977',
+          500: '#E85F3F',
+          DEFAULT: '#E85F3F',
         },
         farming: {
-          50: '#f3fced',
-          100: '#e7f8dc',
-          200: '#bbd7a9',
-          300: '#87a971',
-          400: '#6f9158',
-          500: '#3e7237',
-          DEFAULT: '#3e7237',
-          600: '#366b2f',
-          700: '#2a7220',
+          200: '#9CA59A',
+          500: '#4D7F41',
+          DEFAULT: '#4D7F41',
         },
+        neutral: {
+          50: '#F7F3F2',
+          200: '#E5DCDA',
+          500: '#968780',
+          DEFAULT: '#968780'
+        }
       }
     }
   },
   safelist: [
     {
-      pattern: /(bg|text|ring)-(women|farming|stone|white)(-\d+)?/,
+      pattern: /(bg|text|ring|border)-(women|farming|neutral)(-\d+)?/,
     },
     {
       pattern: /(bg)-(amber-300|orange-400|red-400)/,

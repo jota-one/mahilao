@@ -7,15 +7,15 @@ type Props = {
 const props = withDefaults(defineProps<Props>(), {
   color: 'black',
   titleTag: 'h2',
-  ctaHref: '#'
+  ctaHref: ''
 })
 </script>
 
 <template>
   <div class="flex flex-col justify-between">
-    <component :is="titleTag" class="text-2xl mb-10"><slot name="title" /></component>
+    <component :is="titleTag" class="text-2xl mb-10 font-subtitle"><slot name="title" /></component>
     <div class="flex-1"><slot name="content" /></div>
-    <Cta :href="ctaHref" :color="color"><slot name="cta" /></Cta>
+    <Cta v-if="ctaHref" :href="ctaHref" :color="color"><slot name="cta" /></Cta>
   </div>
 </template>
 

@@ -14,7 +14,7 @@ const props = withDefaults(defineProps<Props>(), {
 <template>
   <Row :cols="3">
     <div class="col-span-1 pr-24">
-      <component :is="titleTag" class="text-xl" :class="[`text-${color}`]"><slot name="title" /></component>
+      <component :is="titleTag" class="text-xl font-subtitle" :class="[`text-${color}`]"><slot name="title" /></component>
     </div>
     <div class="col-span-2 text-md font-sans">
       <slot />
@@ -22,7 +22,3 @@ const props = withDefaults(defineProps<Props>(), {
     </div>
   </Row>
 </template>
-
-<style scoped lang="postcss">
-
-</style>

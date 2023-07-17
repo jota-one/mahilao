@@ -95,7 +95,7 @@ LES GRANDS DEFIS DES FEMMES INDIENNES
 Défis pour les filles,<br>femmes en devenir
 
 #default
-[Pour que le fait d'être une fille au rajasthan soit:]{.text-women.text-2xl}
+[Pour que le fait d'être une fille au rajasthan soit:]{.text-women.text-2xl.font-subtitle}
 
     :::row{:cols=3 class=mt-10}
         :::bullet-block{class=mr-8}

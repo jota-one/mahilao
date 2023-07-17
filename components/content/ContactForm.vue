@@ -87,7 +87,7 @@ const sendEmail = async () => {
               </div>
             </div>
             <div class="p-2 w-full">
-              <button :disabled="!formValid || sending" class="flex mx-auto items-center text-white bg-stone-500 border-0 py-2 px-8 focus:outline-none hover:bg-stone-600 rounded text-lg">
+              <button :disabled="!formValid || sending" class="flex mx-auto items-center text-white bg-neutral border-0 py-2 px-8 focus:outline-none hover:bg-stone-600 rounded text-lg">
                 <span class="i-material-symbols-send mr-2" />
                 Envoyer
               </button>

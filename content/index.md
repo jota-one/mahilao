@@ -140,10 +140,10 @@ Défis pour les filles,<br>femmes en devenir
 ::row{:cols=12}
     :::content-frame{class="bg-women-200 col-span-7 -mt-20 rounder-r-full mr-24 !p-6" background=women id=chiffres color=women}
         ::::row{:cols=2}
-            :::::stat{figure=27% legend="Ecart du taux d’alphabétisation entre les hommes et les femmes"}
+            :::::stat{class="px-4 py-8" figure=27% legend="Ecart du taux d’alphabétisation entre les hommes et les femmes"}
             :::::
 
-            :::::stat{figure=27% legend="Ecart du taux d’alphabétisation entre les hommes et les femmes"}
+            :::::stat{class="px-4 py-8" figure=27% legend="Ecart du taux d’alphabétisation entre les hommes et les femmes"}
             :::::
         ::::
     :::
@@ -152,10 +152,10 @@ Défis pour les filles,<br>femmes en devenir
 ::row{:cols=12 class=mb-32}
     :::content-frame{class="bg-farming-200 col-start-6 col-span-7 rounded-l-full ml-24 !p-6 -mt-20" id=chiffres2 background=farming color=farming :rtl=true}
         ::::row{:cols=2}
-            :::::stat{figure=61% legend="de l’état du Rajasthan est couvert par le Désert du Thar"}
+            :::::stat{class="px-4 py-8" figure=61% legend="de l’état du Rajasthan est couvert par le Désert du Thar"}
             :::::
 
-            :::::stat{figure=40% legend="de la population du Rajasthan vit dans ce désert"}
+            :::::stat{class="px-4 py-8" figure=40% legend="de la population du Rajasthan vit dans ce désert"}
             :::::
         ::::
     :::

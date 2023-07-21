@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen flex-col border-e">
+  <div class="flex h-screen flex-col">
     <div class="px-4 py-6 w-full flex-1 text-right">
       <NuxtLink
           class="grid h-20 place-content-end"
@@ -9,7 +9,7 @@
       </NuxtLink>
 
       <ul class="mt-6 space-y-1 text-right list-none">
-        <template v-for="(item, index) in i18nNavigation">
+        <template v-for="item in i18nNavigation">
           <ActionableMenuItem v-if="item.children" :item="item" :page="page" />
           <li v-else>
             <NuxtLink
@@ -33,7 +33,7 @@
             <strong class="block font-medium">copyright @ Mahilao</strong>
             <span> design by Geetha Laune </span>
             <a href="https://jota.one" target="_blank" class="flex justify-end -mr-2">
-              <img src="/images/jota.svg" />
+              <img src="/images/jota.svg" alt="Jota One" />
             </a>
           </p>
         </div>
@@ -44,13 +44,6 @@
 
 <script setup lang="ts">
 import ActionableMenuItem from "~/components/ActionableMenuItem.vue";
-
-interface Props {
-  opened: boolean
-}
-
-defineProps<Props>()
-defineEmits(['close'])
 
 const { navigation, page } = useContent()
 const i18nNavigation = ref([])

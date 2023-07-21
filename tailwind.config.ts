@@ -1,6 +1,6 @@
 import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
 import { iconsPlugin, getIconCollections } from '@egoist/tailwindcss-icons'
+import flowbite from 'flowbite/plugin'
 
 export default <Partial<Config>>{
   plugins: [
@@ -8,6 +8,10 @@ export default <Partial<Config>>{
       // Select the icon collections you want to use
       collections: getIconCollections(['material-symbols']),
     }),
+    flowbite
+  ],
+  content: [
+    './node_modules/flowbite/**/*.{js,ts}'
   ],
   theme: {
     extend: {
@@ -17,7 +21,6 @@ export default <Partial<Config>>{
         'subtitle': ['Georgia']
       },
       colors: {
-        primary: defaultTheme?.colors?.green,
         women: {
           200: '#E49977',
           500: '#E85F3F',
@@ -32,7 +35,8 @@ export default <Partial<Config>>{
           50: '#F7F3F2',
           200: '#E5DCDA',
           500: '#968780',
-          DEFAULT: '#968780'
+          DEFAULT: '#968780',
+          900: '#2a2625'
         }
       }
     }
@@ -45,7 +49,8 @@ export default <Partial<Config>>{
       pattern: /(bg)-(amber-300|orange-400|red-400)/,
     },
     {
-      pattern: /grid-cols-\d/
+      pattern: /grid-cols-\d+/,
+      variants: ['sm']
     }
   ]
 }

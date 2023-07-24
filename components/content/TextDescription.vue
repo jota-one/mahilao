@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<Props>(), {
     </div>
     <div class="col-span-2 text-md font-sans">
       <slot />
-      <hr v-if="sep" class="w-7 border-2 mt-8" :class="[`border-${color}`]" />
+      <hr v-if="sep" class="w-7 border-2 mt-4 sm:mt-8" :class="[`border-${color}`]" />
     </div>
   </Row>
 </template>

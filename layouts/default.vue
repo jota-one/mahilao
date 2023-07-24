@@ -15,13 +15,13 @@
       </button>
       <Navigation />
     </header>
-    <main class="sm:col-span-10 sm:col-start-3 pb-24" :class="{ 'bg-neutral-200': isHomepage }">
-      <div :class="['body', { transparent: !page?.bodyBg }]">
+    <main ref="wrapperEl" class="sm:col-span-10 sm:col-start-3 pb-12" :class="{ 'bg-neutral-200': isHomepage }">
+      <div class="pb-12">
         <slot />
       </div>
-      <div class="footer">
-        <button v-if="page?.backToTop" class="back-to-top" @click="scrollTop">
-          Back to top
+      <div class="flex justify-end pr-8">
+        <button v-if="page?.backToTop" @click="scrollTop">
+          <span class="i-material-symbols-arrow-upward text-4xl text-neutral"></span>
         </button>
       </div>
     </main>
@@ -38,7 +38,6 @@ useHead({
 })
 
 const wrapperEl = ref<HTMLElement>()
-const navigationOpened = ref(false)
 
 const isHomepage = computed(() => page.value._id === 'content:index.md')
 

@@ -1,6 +1,6 @@
 <template>
   <li>
-    <details class="group [&_summary::-webkit-details-marker]:hidden w-full" :open="open" @mouseover="open = true" @mouseout="resetOpen">
+    <details class="group [&_summary::-webkit-details-marker]:hidden w-full" :open="open" @mouseover="open = true" @mouseout="resetOpen" @click.prevent="">
       <summary
           class="flex cursor-pointer rounded-lg px-4 pt-2 text-black hover:text-gray-700 justify-end"
       >
@@ -35,7 +35,3 @@ const resetOpen = () => {
   open.value = props.item.active
 }
 </script>
-
-<style scoped lang="postcss">
-
-</style>

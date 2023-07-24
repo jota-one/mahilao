@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="bg-white rounded-l-full pl-24 py-12">
-    <h2 class="uppercase text-2xl mb-4">Actualité</h2>
+  <div class="bg-white rounded-l-full pl-24 py-12 sm:-mt-12">
+    <h2 class="font-display uppercase text-4xl mb-4">Actualité</h2>
     <h3 class="text-red-700 mb-2">EXPOSITION PHOTO</h3>
     <p class="font-medium">
       « A la rencontre des<br>femmes du Rajasthan »<br>

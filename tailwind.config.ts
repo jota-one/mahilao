@@ -37,6 +37,9 @@ export default <Partial<Config>>{
           500: '#968780',
           DEFAULT: '#968780',
           900: '#2a2625'
+        },
+        title: {
+          DEFAULT: '#333333'
         }
       }
     }

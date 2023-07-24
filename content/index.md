@@ -1,3 +1,6 @@
+---
+backToTop: true
+---
 ::hero{img=/images/site-accueil.jpg}
 Être aux côtés<br>
 des femmes indiennes<br>
@@ -42,7 +45,7 @@ d'aujourd'hui et de demain
 
 ::content-frame{id=defi class="bg-neutral-50"}
 #title
-LES GRANDS DEFIS DES FEMMES INDIENNES
+DÉFIS ACTUELS<br> POUR LES FEMMES INDIENNES
 
 #default
     :::text-description{color=women :sep=true class=mb-8}
@@ -105,7 +108,7 @@ LES GRANDS DEFIS DES FEMMES INDIENNES
 
 ::content-frame{class="mt-10 bg-neutral-50" id=act-with-children}
 #title
-Défis pour les filles,<br>femmes en devenir
+DÉFIS POUR LES FILLES,<br>FEMMES EN DEVENIR
 
 #default
 [Pour que le fait d'être une fille au rajasthan soit:]{.text-women.text-2xl.font-subtitle}
@@ -139,10 +142,10 @@ Défis pour les filles,<br>femmes en devenir
 
 ::row{:cols=12 class=mt-24}
 <div class="sm:col-span-4 sm:col-start-2 md:mt-40 flex items-center">
-    <h3 class="text-5xl font-display">Contexte au Rajasthan</h3>
+    <h3 class="text-5xl font-display px-8 sm:p-0">Contexte au Rajasthan</h3>
 </div>
 
-    :::content-frame{class="sm:col-start-6 sm:col-span-7 mt-10 rounded-l-full py-6 pl-6 pr-6 bg-white" id=map :rtl=true}
+    :::content-frame{class="sm:col-start-6 sm:col-span-7 mt-10 rounded-l-full py-6 sm:!pl-6 sm:!pr-6 bg-white" id=map :rtl=true}
     ![Rajasthan](/images/rajasthan.png)
     :::
 ::

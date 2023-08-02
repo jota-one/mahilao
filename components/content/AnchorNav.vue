@@ -1,6 +1,7 @@
 <script setup lang="ts">
 type Props = {
   anchorTag: string
+  imageSrc?: string
   leftImageSrc?: string
   rightImageSrc?: string
 }
@@ -11,6 +12,7 @@ interface NavItem {
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  imageSrc: '',
   leftImageSrc: '',
   rightImageSrc: ''
 })
@@ -63,6 +65,9 @@ onMounted(async () => {
       </div>
       <TopImage v-if="leftImageSrc" :src="leftImageSrc" class="col-span-1 ml-6 mr-10" />
       <TopImage v-if="rightImageSrc" :src="rightImageSrc" class="col-span-1 mr-16" />
+    </div>
+    <div class="font-subtitle text-2xl flex justify-end w-full sm:pr-24 mt-8">
+      <div class="w-1/4"><slot name="quote" /></div>
     </div>
     <div ref="container" class="content">
       <slot />
